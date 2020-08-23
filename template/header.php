@@ -13,7 +13,6 @@ ini_set('display_errors', 1);
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="template/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
-<h1>hi</h1>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light ">
