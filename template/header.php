@@ -31,7 +31,7 @@ ini_set('display_errors', 1);
             <a class="nav-link text-white" href="photographers.php">الخدمات</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">من نحن</a>
+            <a class="nav-link text-white" href="AboutUs.php">من نحن</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
