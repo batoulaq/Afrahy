@@ -6,6 +6,9 @@ body {
 background: rgba(0, 0, 0, 0.71);
 padding: 20px;
 }
+.dropdown-menu{
+  background: rgba(0, 0, 0, 0.76);
+}
 ul a:hover{
     color: #ad974f !important;
   }
@@ -54,8 +57,15 @@ ul a:hover{
 }
 
   /* end */
+/* header-carousel */
 .carousel-caption h3{
-  font-size: 2rem;
+ font-size: 2em;
+ font-weight: 900;
+ background-color: rgba(0,0,0, 0.3);
+ padding: 0.5em 0px;
+ border-radius: 5px;
+ margin: auto;
+ width: 60%;
 }
 /* end */
 
@@ -143,6 +153,23 @@ ul a:hover{
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
         transform: scale(1.05); }
+        .service-count{
+        position: absolute;
+        left: 20%;
+        display: inline-block;
+        background: #ad974f;
+        font-size: 12px;
+        border-radius: 30px;
+        font-weight: 400;
+        padding: 0px 12px;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s
+      }
 /* end */
 /* comments */
 #comment-bg{
@@ -278,6 +305,25 @@ ul a:hover{
 	margin: 100px auto;
 }
 /* end */
+/* FAQ */
+.btn-link {
+  font-size: 18px;
+  color: #ad974f!important;
+  font-weight: 550;
+}
+/* end */
+/* addService */
+.submitService{
+  	font-size: 16px;
+  	font-weight: bold;
+  	border-color: #d8ba59f7 !important;
+  	border-radius: 3px;
+  	min-width: 140px;
+  }
+  .submitService:hover{
+  	background: #d8ba59f7 !important;
+  }
+/* end */
 /* media */
 @media (min-width: 499px){
   .carousel-caption{
@@ -287,7 +333,8 @@ ul a:hover{
 }
 @media (max-width: 400px){
   .carousel-caption h3{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    width: 90%;
   }
   #carouselComment{
     height: 50vh;
