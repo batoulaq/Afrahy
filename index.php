@@ -14,21 +14,21 @@ require_once 'template/header.php';
   <div class="carousel-item active carousel-img">
     <img class="d-block w-100 img-fluid" style="opacity:0.8" src="slide3.h"height="648" alt="First slide">
     <div class="carousel-caption ">
-    <h3 class="text-dark">نتشرف ونسعد بخدمتكم</h3>
+    <h3 class="text-white">نتشرف ونسعد بخدمتكم</h3>
     <button class="btn semi-transparent-button font-weight-bold mt-3">المزيد</button>
     </div>
 </div>
   <div class="carousel-item carousel-img">
     <img class="d-block w-100 img-fluid" style="opacity:0.8" src="slide_1.jpg" height="648" alt="Second slide">
     <div class="carousel-caption ">
-      <h3 class="text-dark">فرحتكم من فرحتنا </h3>
+      <h3 class="text-white">فرحتكم من فرحتنا </h3>
         <button class="btn semi-transparent-button font-weight-bold mt-3">المزيد</button>
       </div>
 </div>
   <div class="carousel-item carousel-img">
     <img class="d-block w-100 img-fluid" style="opacity:0.8" src="slide3.h"height="648" alt="Third slide">
     <div class="carousel-caption ">
-      <h3 class="text-dark">رضاكم مصدر اهتمامنا</h3>
+      <h3 class="text-white">رضاكم مصدر اهتمامنا</h3>
         <button class="btn semi-transparent-button font-weight-bold mt-3">المزيد</button>
       </div>
   </div>
@@ -55,7 +55,7 @@ require_once 'template/header.php';
     <a href="photographers.php" class="unit-1 text-center">
     <img src="wedding-photographer.jpg"  alt="Image" class="img-fluid">
     <div class="unit-1-text">
-          <h3 class="unit-1-heading ">المصورين<span class="service-count"></span></h3>
+          <h3 class="unit-1-heading ">المصورين<span class="service-count">06</span></h3>
     </div>
     </a>
     </div>
@@ -63,7 +63,7 @@ require_once 'template/header.php';
     <a href="#" class="unit-1 text-center">
     <img src="MakeUp.jpg" alt="Image" class="img-fluid">
     <div class="unit-1-text">
-    <h3 class="unit-1-heading">خبراء التجميل<span class="service-count"></span></h3>
+    <h3 class="unit-1-heading">خبراء التجميل<span class="service-count">06</span></h3>
     </div>
     </a>
     </div>
@@ -71,7 +71,7 @@ require_once 'template/header.php';
     <a href="#" class="unit-1 text-center">
     <img src="weddingplanner.h" alt="Image" class="img-fluid">
     <div class="unit-1-text">
-    <h3 class="unit-1-heading">منسقين الحفلات <span class="service-count"></span></h3>
+    <h3 class="unit-1-heading">منسقين الحفلات <span class="service-count">06</span></h3>
     </div>
     </a>
     </div>
