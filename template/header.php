@@ -27,14 +27,14 @@ ini_set('display_errors', 1);
           <li class="nav-item active">
             <a class="nav-link text-white" href="index.php">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="photographers.php">الخدمات</a>
-          </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="photographers.php">الخدمات</a>
+         </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="AboutUs.php">من نحن</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-white" href="faq.php" >
               الأسئلة الشائعة
             </a>
           </li>
@@ -42,14 +42,29 @@ ini_set('display_errors', 1);
               <a class="nav-link text-white" href="contact.php">اتصل بنا</a>
             </li>
         </ul>
+        <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto">
+        @guest
             <li class="nav-item ">
               <a class="nav-link text-white" href="#mylogin" data-toggle="modal">دخول</a>
             </li>
+          @if (Route::has('register'))
             <li class="nav-item">
               <a class="nav-link text-white" href="#mysingUp" data-toggle="modal">تسجيل</a>
             </li>
-        </ul>
+          @endif
+          @else
+        <div class="nav-item dropdown show">
+       <a class="nav-link text-white dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ Auth::user()->name }}
+       </a>
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+         <a class="dropdown-item nav-link text-white" href="addService.php">إضافة خدمة جديدة</a>
+         <a class="dropdown-item nav-link text-white" href="#">تعديل الخدمات</a>
+       </div>
+     </div>
+     @endguest
+     </ul>
       </div>
     </nav>
 <!-- login -->
@@ -77,7 +92,7 @@ ini_set('display_errors', 1);
          <div class="form-group">
            <button type="submit" class="btn  btn-block btn-lg">دخول</button>
          </div>
-         <p class="hint-text"><strong><a href="#">نسيت كلمة المرور؟</a></strong></p>
+         <p class="hint-text"><strong><a href="#mypass" data-dismiss="modal" data-toggle="modal">نسيت كلمة المرور؟</a></strong></p>
        </form>
      </div>
      <div class="modal-footer">  ليس لديك حساب؟ <a href="#mysingUp" data-dismiss="modal" data-toggle="modal">  سجل </a></div>
@@ -128,4 +143,30 @@ ini_set('display_errors', 1);
    </div>
  </div>
 </div>
+<!-- end -->
+<!-- forgot password -->
+<div id="mypass" class="modal fade">
+ <div class="modal-dialog modal-login">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h4 class="modal-title">استعادة كلمة المرور</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+     </div>
+     <div class="modal-body">
+       <form action="/examples/actions/confirmation.php" method="post">
+         <div class="form-group">
+           <div class="input-group">
+             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+             <input type="email" class="form-control" name="email" placeholder="البريد الالكتروني" required="required">
+           </div>
+         </div>
+         <div class="form-group">
+           <button type="submit" class="btn  btn-block btn-lg">ارسال</button>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+</div>
+
 <!-- end -->
